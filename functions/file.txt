@@ -1,2 +1,0 @@
-Hello “name”
-Ready for today’s check-in?

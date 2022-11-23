@@ -1,6 +1,0 @@
-#!/bin/usr/python3
-"""
-THE MENU FUNC FOR SANITY MENU-DRIVEN APPLICATION
-"""
-
-
