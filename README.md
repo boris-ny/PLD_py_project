@@ -1,7 +1,23 @@
 # PLD_py_project
+### Running this program
 
-
+- To run this program, enter the command below
 > python3 run.py
+
+#### Dependemcies to install 
+To install each of these modules, simply go to your terminal and run a pip install. Below is the pip install command for the modules to install
+- tqdm 
+> pip install tqdm
+
+- colorama
+> pip install colorama
+
+- termcolor
+> pip install termcolor
+
+- pyfiglet
+> pip install pyfiglet
+
 
 #### Contribution Guide
 
