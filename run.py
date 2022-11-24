@@ -19,7 +19,7 @@ class Question:
 
 
 question_prompts = [
-    "Do you feel like doing things isn’t fun anymore?\n(a) Not at all\n(b) Somewhat\n(c) Very much\n",
+    "Do you feel like doing things isn't fun anymore?\n(a) Not at all\n(b) Somewhat\n(c) Very much\n",
     "I have been feeling anxious of late\n(a) Not at all\n(b) Somewhat\n(c) Very much\n",
     "I often feel worried\n(a) Not at all\n(b) Somewhat\n(c) Very much\n",
     "I have a strong support system that helps me cope\n(a) Strongly disagree\n(b) Somewhat\n(c) Strongly agree\n",
