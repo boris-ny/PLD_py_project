@@ -10,8 +10,6 @@ from pyfiglet import figlet_format
 
 cprint(figlet_format('SANITY', font='starwars'),
        'yellow', 'on_red', attrs=['bold'])
-cprint('Welcome to SANITY, your mental health checker...\n Sanity is a health terminal-app built with python that accept answers to questions as input and analysis the mental state of the user in seconds\n ', 'green', attrs=['bold'], file=sys.stderr)
-cprint('To get started\n You have a number of questionnaires and you can just answer by simply typing a, b or c...\n ', 'green', attrs=['bold'], file=sys.stderr)
 
 
 class Question:
@@ -63,5 +61,22 @@ def run_quiz(questions):
         sleep(1)
     print(f"Thank you for checking in! Your percentage wellbeing today is {score_percent}%")
 
+def menu():
+    entry_screen = input("Welcome to Sanity!\n Select [a] Get started! [b] About [c] Credits\n -> ").lower()
+    return entry_screen
 
-run_quiz(questions)
+entry_screen = menu()
+
+if entry_screen == "a":
+    cprint('To get started\n You have a number of questionnaires and you can just answer by simply typing a, b or c...\n ', 'green', attrs=['bold'], file=sys.stderr)
+    run_quiz(questions)
+    menu()
+
+if entry_screen == "b":
+    cprint('Welcome to SANITY, your mental health checker...\n Sanity is a health terminal-app built with python that accept answers to questions as input and analysis the mental state of the user in seconds\n ', 'green', attrs=['bold'], file=sys.stderr)
+    menu()
+if entry_screen == "c":
+    cprint('Credit Goes to Negpod7 May SE 2022:\n  Jeff Dauda\n Boris Nyilindek\n Elvis Kinyua\n Fese Mbile\n Diana Otieno\n Teny Gatluak, ', 'green', attrs=['bold'], file=sys.stderr)
+    menu()
+
+
